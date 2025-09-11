@@ -1,0 +1,10 @@
+- [x] Add necessary imports (Data.List, Data.Ord, Data.Function)
+- [x] Add HC1T1 functions and comment
+- [x] Add HC1T2 functions and comment
+- [x] Add HC1T3 functions and comment
+- [x] Add HC1T4 functions and comment
+- [x] Add HC1T5 functions and comment
+- [x] Add HC1T6 functions and comment
+- [x] Add HC1T7 functions and comment
+- [x] Add HC1T8 functions and comment
+- [x] Add main function that prints results for all tasks

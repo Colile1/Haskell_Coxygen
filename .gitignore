@@ -1,0 +1,5 @@
+./.gitignore
+.blackboxrules
+./my-haskell-project
+./0.py
+./TODO.md
