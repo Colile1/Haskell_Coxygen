@@ -1,6 +1,7 @@
--- HC1T4
+-- HC1T4: Composing a Function to Process Player Data
+
 import Data.List (sortBy)
-import Data.Ord (comparing)
+import Data.Function (on)
 
 extractPlayers :: [(String, Int)] -> [String]
 extractPlayers = map fst
@@ -15,4 +16,11 @@ getTopThreePlayers :: [(String, Int)] -> [String]
 getTopThreePlayers = extractPlayers . topThree . sortByScore
 
 main :: IO ()
-main = print (getTopThreePlayers [("Alice", 10), ("Bob", 20), ("Charlie", 15), ("Dave", 5)])
+main = print (getTopThreePlayers [
+    ("Colile", 20),
+    ("Sabelo", 12),
+    ("Themba", 16),
+    ("Cirie", 10),
+    ("Anele", 8),
+    ("Zinhle", 14)
+    ])
