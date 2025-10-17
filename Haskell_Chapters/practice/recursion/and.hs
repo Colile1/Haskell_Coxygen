@@ -1,0 +1,2 @@
+and' :: Bool -> Bool
+and' [] 

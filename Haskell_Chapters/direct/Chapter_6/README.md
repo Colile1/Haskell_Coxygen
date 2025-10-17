@@ -1,5 +1,7 @@
 # Haskell Chapter 6: Recursion and Folds
 
+This topic delves into recursion and folds, fundamental concepts in functional programming. It begins with why recursion is important, explaining how it provides a natural way to solve problems by breaking them into smaller subproblems. Thinking recursively is key to writing effective recursive functions, demonstrated through basic examples like sum and product. The process of creating a recursive function is outlined with step-by-step guidance, followed by practical examples such as and, length, reverse, drop, take, map, and filter. The discussion then shifts to foldr, a pattern for extracting recursion into a higher-order function. The foldl and foldlPrime functions are introduced, explaining their differences in terms of strictness and performance. Finally, best practices for choosing between foldr, foldl, and foldlPrime are covered, ensuring efficient and idiomatic functional programming.
+
 Hakell Practical Tasks
 Write code to complete Practical Tasks below. Haskell editor for testing is also found below this page.
 
@@ -34,3 +36,7 @@ Implement a function that applies a given function to each element of a list (ma
 
 ## HC6T10: Digits of a Number (Recursive)
 Implement a recursive function that takes a number and returns a list of its digits.
+
+
+for guards "=" means returns 
+for normal functions  before "=" are the variables then after "=" is the function logic
