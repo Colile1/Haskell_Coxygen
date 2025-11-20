@@ -1,7 +1,5 @@
 # Haskell Chapter 7: Intro to Type Classes
 
-
-# Hakell Practical Tasks
 Write code to complete Practical Tasks below. Haskell editor for testing is also found below this page.
 
 Haskell Chapter 7 Practical Tasks: Type Classes and Custom Types
@@ -13,7 +11,7 @@ Implement the Eq type class for it so that colors of the same type are considere
 ## HC7T2: Implement an Ord Instance for a Custom Data Type
 Using the Color type from 
 
-## HC7T1, implement the Ord type class so that Red < Green < Blue.
+## HC7T1: implement the Ord type class so that Red < Green < Blue.
 
 ## HC7T3: Function Using Multiple Constraints
 Write a function compareValues that takes two arguments of type a and returns the larger one.

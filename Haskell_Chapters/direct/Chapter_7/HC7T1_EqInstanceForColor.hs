@@ -11,10 +11,9 @@ instance Eq Color where
     Blue == Blue = True
     _ == _ = False
 
--- Output logic: Demonstrates equality checks.
 main :: IO ()
 main = do
     putStrLn "Red == Red: True"
     putStrLn (show (Red == Red))
     putStrLn "Red == Green: False"
-    putStrLn (show (Red == Green))
+    putStrLn (show (Red == Gr7een))

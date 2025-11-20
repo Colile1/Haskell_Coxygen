@@ -1,19 +1,11 @@
 -- HC7T10.hs : Describe and Compare Function
 -- This file writes a function to describe and compare Describable values.
-
--- Pure function: Defines the Shape data type.
 data Shape = Circle Double | Rectangle Double Double deriving (Show, Read, Eq, Ord)
-
--- Pure function: Defines the Describable type class.
 class Describable a where
     describe :: a -> String
-
--- Pure function: Implements Describable for Bool.
 instance Describable Bool where
     describe True = "True value"
     describe False = "False value"
-
--- Pure function: Implements Describable for Shape.
 instance Describable Shape where
     describe (Circle r) = "Circle with radius " ++ show r
     describe (Rectangle w h) = "Rectangle with width " ++ show w ++ " and height " ++ show h
@@ -42,7 +34,6 @@ get_describeAndCompareShape = do
     let y = read s2 :: Shape
     return (describeAndCompare x y)
 
--- Output logic: Prints the description of the larger value.
 main :: IO ()
 main = do
     descBool <- get_describeAndCompareBool

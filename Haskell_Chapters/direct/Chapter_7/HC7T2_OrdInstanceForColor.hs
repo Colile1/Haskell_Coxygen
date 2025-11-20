@@ -21,7 +21,6 @@ instance Ord Color where
     compare Blue Green = GT
     compare _ _ = EQ
 
--- Output logic: Demonstrates ordering.
 main :: IO ()
 main = do
     putStrLn "Red < Green: True"

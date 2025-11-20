@@ -8,7 +8,7 @@ squareArea side = side * side
 -- Input wrapper: Gets side length from input.
 get_squareArea :: IO Double
 get_squareArea = do
-    putStrLn "Enter side length:"
+    putStrLn "Enter side length of square:"
     side <- readLn
     return (squareArea side)
 

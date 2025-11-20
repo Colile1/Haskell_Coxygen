@@ -33,7 +33,6 @@ get_describeShape = do
     let shape = read s :: Shape
     return (describe shape)
 
--- Output logic: Prints descriptions.
 main :: IO ()
 main = do
     descBool <- get_describeBool

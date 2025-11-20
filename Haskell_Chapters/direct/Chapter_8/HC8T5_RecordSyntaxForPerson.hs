@@ -1,7 +1,7 @@
 -- HC8T5.hs : Record Syntax for Person
 -- This file defines Person type using record syntax and creates two persons.
 
-data Person = Person { name :: String, age :: Int, isEmployed :: Bool }
+data Person = Person { name :: String, age :: Int, isEmployed :: Bool } deriving (Show)
 
 person1 :: Person
 person1 = Person { name = "Alice", age = 30, isEmployed = True }
