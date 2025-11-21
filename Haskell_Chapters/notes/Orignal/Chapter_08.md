@@ -1,4 +1,4 @@
-# Haskell Chapter8: Creating Non-parameterized Types
+# Haskell Chapter 8: Creating Non-parameterized Types
 
 Outline
 If-then-else expressions.
