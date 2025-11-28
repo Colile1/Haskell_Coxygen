@@ -1,72 +1,39 @@
-# Haskell Chapter 15: Semigroups
+# Haskell Chapter Handling errors in Haskell
 
-## What is a Semigroup?
+## Practical Tasks
+Write code to complete Practical Tasks below. Haskell editor for testing is also found below this page.
 
-A semigroup is a mathematical structure consisting of a set together with an associative binary operation. In Haskell, the `Semigroup` type class represents this concept. It provides a way to combine two values of the same type into a single value, with the property that the operation is associative.
+# Haskell Chapter 15 Practical Tasks: Exception and Error Handling
 
-The `Semigroup` type class is defined as:
+## HC15T1: Handle Exceptions for File Reading and Velocity Calculation
+Handle exceptions in a program that reads a file and calculates velocity based on user input.
 
-```haskell
-class Semigroup a where
-    (<>) :: a -> a -> a
-```
+## HC15T2: Self-Driving AI Car System
+Implement a basic self-driving AI car system that reacts to traffic light colors.
 
-The key property is associativity: for all `a`, `b`, and `c` of type `a`, `(a <> b) <> c == a <> (b <> c)`.
+## HC15T3: Custom Exception for Traffic Light Errors
+Define and throw a custom exception for traffic light errors.
 
-## Examples of Semigroups in Haskell
+## HC15T4: Exception Handler for Traffic Light
+Use a handler function to catch and handle traffic light exceptions.
 
-### Lists
+## HC15T5: Safe Division Using Maybe
+Write a safe division function using the Maybe type to avoid divide-by-zero errors.
 
-Lists form a semigroup under concatenation. The `<>` operator concatenates two lists:
+## HC15T6: Safe Input Parsing with readMaybe
+Use readMaybe to parse user input safely and avoid runtime errors during input parsing.
 
-```haskell
-[1,2,3] <> [4,5,6]  -- Results in [1,2,3,4,5,6]
-```
+## HC15T7: Velocity Calculation with Optionals and Parsing Handling
+Implement a program that calculates velocity using optional values and handles parsing errors.
 
-### Strings
+## HC15T8: Division with Either for Detailed Errors
+Define a function using the Either type to provide detailed error messages for division.
 
-Strings (which are lists of characters) also form a semigroup:
+## HC15T9: Try Function for File IO Exceptions
+Use the try function to catch file IO exceptions and handle them gracefully.
 
-```haskell
-"Hello" <> " " <> "World"  -- Results in "Hello World"
-```
+## HC15T10: Hybrid Error Handling with Either and IO
+Create a velocity program that uses both Either and IO exceptions to demonstrate hybrid error handling.
 
-### Sum and Product
-
-The `Sum` and `Product` newtypes from `Data.Monoid` form semigroups:
-
-```haskell
-Sum 3 <> Sum 4  -- Results in Sum 7
-Product 3 <> Product 4  -- Results in Product 12
-```
-
-### Unit Type
-
-The unit type `()` forms a semigroup where `<>` always returns `()`:
-
-```haskell
-() <> ()  -- Results in ()
-```
-
-## Relation to Monoids
-
-Every monoid is a semigroup, but not every semigroup is a monoid. A monoid additionally requires an identity element. In Haskell, the `Monoid` type class extends `Semigroup`:
-
-```haskell
-class Semigroup a => Monoid a where
-    mempty :: a
-    mappend :: a -> a -> a
-    mappend = (<>)
-```
-
-For example, lists form a monoid with `[]` as the identity, while natural numbers under addition form a semigroup but not a monoid (no identity element).
-
-## Using Semigroups
-
-To use semigroups in your code, import the `Semigroup` type class:
-
-```haskell
-import Data.Semigroup
-```
-
-Then you can use the `<>` operator to combine values of semigroup types.
+# Solutions
+## 
