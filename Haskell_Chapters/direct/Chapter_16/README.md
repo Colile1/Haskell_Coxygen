@@ -1,7 +1,11 @@
-Hakell Practical Tasks
+# Hakell Practical Tasks
 Write code to complete Practical Tasks below. Haskell editor for testing is also found below this page.
 
-Haskell Chapter 16 Practical Tasks: Fundamental Functions
+HC16-16. Haskell Chapter 16 Practical Tasks: Gaining-your-independence-and-project	
+
+This lesson, "Gaining Your Independence," equips developers with essential tools and techniques to become more self-sufficient in Haskell development. It focuses on small but powerful tips and tricks that streamline coding, debugging, and learning. Key topics include: " REPL (Read-Eval-Print Loop) Using GHCi to test code interactively, explore functions, and debug efficiently." Hackage Haskell's central package repository, where developers can find libraries, documentation, and community contributions." Hoogle A search engine for Haskell functions and types, helping developers quickly locate relevant functionality." undefined A placeholder for incomplete code, useful when structuring functions before full implementation." Type Holes A feature that allows developers to leave gaps in their code (_) and let the compiler suggest the expected type, making debugging and development smoother. The section wraps up with a final project, reinforcing these concepts in a hands-on way. By mastering these tools, Haskell developers can gain independence, troubleshoot effectively, and build confidence in writing and exploring Haskell code.
+
+# Haskell Chapter 16 Practical Tasks: Fundamental Functions
 
 ## HC16T1: Reverse a String
 Define a function to reverse a string.
