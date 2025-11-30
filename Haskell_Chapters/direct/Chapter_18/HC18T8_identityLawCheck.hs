@@ -8,4 +8,4 @@ main :: IO ()
 main = do
     print (identityLawCheck [1, 2, 3])
     print (identityLawCheck (Just 5))
-    print (identityLawCheck Nothing)
+    print (identityLawCheck (Nothing :: Maybe Int))

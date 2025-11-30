@@ -6,5 +6,5 @@ fmapTuple f (x, y) = (x, f y)
 
 main :: IO ()
 main = do
-    print (fmapTuple (+1) ("hello", 5))  -- ("hello", 6)
-    print (fmapTuple show (42, True))    -- (42, "True")
+    print (fmapTuple (+1) ("hello", 5))
+    print (fmapTuple show (42, True))

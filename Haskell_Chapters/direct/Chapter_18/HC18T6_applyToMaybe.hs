@@ -6,5 +6,5 @@ applyToMaybe = fmap
 
 main :: IO ()
 main = do
-    print (applyToMaybe (+1) (Just 5))  -- Just 6
-    print (applyToMaybe (+1) Nothing)   -- Nothing
+    print (applyToMaybe (+1) (Just 5)) 
+    print (applyToMaybe (+1) Nothing)
