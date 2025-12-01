@@ -7,7 +7,7 @@ import Control.Applicative
 discardSecond :: Applicative f => f a -> f b -> f a
 discardSecond fa fb = fa <* fb
 
--- Output logic: Main entry point
+-- Output logic: 
 main :: IO ()
 main = do
     putStrLn "Running actions..."
